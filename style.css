@@ -47,30 +47,111 @@ body {
 }
 
 .hero {
+    background-color: #1A1A2E; /* Dark background to match design */
+    color: #FFF; /* White text for contrast */
+    padding: 60px 0;
+}
+
+.hero .container {
     display: flex;
     align-items: center;
-    padding: 60px 0;
-    background-color: #0B0D17;
+    justify-content: space-between;
+    gap: 20px; /* Space between text and image */
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px; /* Space between elements when wrapping */
 }
 
 .hero-text {
     flex: 1;
+    min-width: 300px;
 }
 
 .hero-text h2 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: 700;
 }
 
 .hero-text p {
-    margin-bottom: 20px;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
 }
 
-.hero-image img {
-    max-width: 100%;
-    border-radius: 10px;
+.hero-buttons {
+    display: flex;
+    gap: 15px; /* Space between buttons */
 }
 
+.btn-primary {
+    background-color: #4e54c8; /* Main button color */
+    color: #FFF;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #3a3fbd; /* Slightly darker shade on hover */
+}
+
+.btn-secondary {
+    background-color: #F0F0F0; /* Light background for contrast */
+    color: #333;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #e0e0e0; /* Darker shade on hover */
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 250px;
+}
+
+.image-placeholder {
+    width: 400px; /* Main image size */
+    height: 300px; /* Main image size */
+    background: #ccc; /* Placeholder color */
+    border-radius: 8px;
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    border: 2px dashed #999; /* Dashed border for placeholder */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; /* Space between images */
+}
+
+.image-placeholder-secondary {
+    width: 200px; /* Secondary image size */
+    height: 150px; /* Secondary image size */
+    background: #ddd; /* Placeholder color */
+    border-radius: 8px;
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    border: 2px dashed #999; /* Dashed border for placeholder */
+}
 .features {
     background-color: #111729;
     padding: 60px 0;
