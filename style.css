@@ -11,39 +11,60 @@ body {
     max-width: 1200px;
 }
 
+
 .header {
+    background-color: #1A1A2E; /* Dark background to match design */
+    padding: 20px 0; /* Adjust padding for top and bottom */
+}
+
+.header .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-    background-color: #0B0D17;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between logo and navbar */
+    max-width: 1200px; /* Set max width for better layout */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Side padding */
 }
 
 .logo h1 {
-    color: #FFFFFF;
+    font-size: 2rem; /* Adjust logo font size */
+    color: #FFF; /* Logo color */
+    margin: 0; /* Remove default margin */
 }
 
 .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    display: flex; /* Flexbox for horizontal alignment */
+    gap: 20px; /* Space between navbar items */
+}
+
+.navbar ul li {
+    display: inline; /* Inline items */
 }
 
 .navbar a {
-    text-decoration: none;
-    color: #FFFFFF;
-    padding: 10px 15px;
+    text-decoration: none; /* Remove underline */
+    color: #FFF; /* Navbar text color */
+    font-weight: 500; /* Font weight for navbar links */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar a:hover {
+    color: #4e54c8; /* Change color on hover */
 }
 
 .btn-primary {
-    background-color: #3B82F6;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    text-decoration: none;
+    background-color: #4e54c8; /* Main button color */
+    color: #FFF;
+    padding: 10px 20px; /* Adjust button padding */
     border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #3a3fbd; /* Slightly darker shade on hover */
 }
 
 .hero {
