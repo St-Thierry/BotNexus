@@ -13,7 +13,7 @@ body {
 
 
 .header {
-    background-color: #1A1A2E; /* Dark background to match design */
+    background-color: ##14142b; /* Dark background to match design */
     padding: 20px 0; /* Adjust padding for top and bottom */
     border-bottom: 2px solid rgba(255, 255, 255, 0.1); /* Light border for distinction */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
