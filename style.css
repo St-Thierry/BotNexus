@@ -214,30 +214,52 @@ body {
     margin-bottom: 10px;
 }
 
-.about {
-    padding: 60px 0;
-    background-color: #0B0D17;
+.company-details {
+    background-color: #1A1A2E; /* Dark background to match design */
+    color: #FFF; /* White text for contrast */
+    padding: 60px 0; /* Padding for top and bottom */
 }
 
-.about-content {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.company-details h2 {
+    text-align: center; /* Center the heading */
+    font-size: 2.5rem; /* Font size for the heading */
+    margin-bottom: 40px; /* Space below heading */
 }
 
-.about-content img {
-    max-width: 100%;
-    border-radius: 10px;
-    flex: 1;
+.company-content {
+    display: flex; /* Flexbox for horizontal layout */
+    align-items: flex-start; /* Align items at the start */
+    justify-content: center; /* Center content */
+    gap: 40px; /* Space between text and image */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
-.about-text {
-    flex: 1;
+.company-info {
+    flex: 1; /* Allow info section to take available space */
+    min-width: 300px; /* Minimum width for responsive design */
 }
 
-.footer {
-    background-color: #111729;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
+.company-info p {
+    font-size: 1.1rem; /* Font size for paragraphs */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+.company-image {
+    flex: 1; /* Allow image section to take available space */
+    min-width: 250px; /* Minimum width for image section */
+}
+
+.image-placeholder {
+    width: 400px; /* Size of the placeholder image */
+    height: 300px; /* Size of the placeholder image */
+    background: #ccc; /* Placeholder color */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center text inside */
+    color: #666; /* Text color for placeholder */
+    font-size: 0.9rem; /* Font size for placeholder text */
+    border: 2px dashed #999; /* Dashed border for placeholder */
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
 }
