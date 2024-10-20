@@ -220,46 +220,75 @@ body {
     padding: 60px 0; /* Padding for top and bottom */
 }
 
-.company-details h2 {
-    text-align: center; /* Center the heading */
-    font-size: 2.5rem; /* Font size for the heading */
-    margin-bottom: 40px; /* Space below heading */
+.company-details {
+    background-color: #1A1A2E;
+    color: #FFFFFF;
+    padding: 60px 0;
 }
 
-.company-content {
-    display: flex; /* Flexbox for horizontal layout */
-    align-items: flex-start; /* Align items at the start */
-    justify-content: center; /* Center content */
-    gap: 40px; /* Space between text and image */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+.company-details h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
-.company-info {
-    flex: 1; /* Allow info section to take available space */
-    min-width: 300px; /* Minimum width for responsive design */
+.company-description {
+    text-align: center;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
 }
 
-.company-info p {
-    font-size: 1.1rem; /* Font size for paragraphs */
-    line-height: 1.6; /* Line height for readability */
-    margin-bottom: 20px; /* Space between paragraphs */
+.scroll-indicator {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-.company-image {
-    flex: 1; /* Allow image section to take available space */
-    min-width: 250px; /* Minimum width for image section */
+.indicator-line {
+    width: 100px;
+    height: 4px;
+    background: #888; /* Gray background for inactive sections */
+    transition: background 0.3s ease;
+}
+
+.scrollable-sections {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 0 20px;
+    scroll-behavior: smooth;
+}
+
+.section {
+    display: flex;
+    background: #2E2E3A;
+    border-radius: 8px;
+    min-width: 300px;
+    flex: 0 0 90%; /* Flex basis for scrollable effect */
+    padding: 20px;
+    gap: 20px;
 }
 
 .image-placeholder {
-    width: 400px; /* Size of the placeholder image */
-    height: 300px; /* Size of the placeholder image */
-    background: #ccc; /* Placeholder color */
-    border-radius: 8px; /* Rounded corners */
-    text-align: center; /* Center text inside */
-    color: #666; /* Text color for placeholder */
-    font-size: 0.9rem; /* Font size for placeholder text */
-    border: 2px dashed #999; /* Dashed border for placeholder */
-    display: flex; /* Flexbox for centering */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
+    width: 150px;
+    height: 150px;
+    background: #CCCCCC;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.text {
+    flex: 1;
+}
+
+.text h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.text p {
+    font-size: 1rem;
+    line-height: 1.5;
 }
