@@ -25,3 +25,13 @@ document.querySelectorAll('.filter-btn').forEach(button => {
         });
     });
 });
+
+document.addEventListener('scroll', function() {
+    const contactSection = document.querySelector('.contact-section');
+    const sectionPosition = contactSection.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.5;
+
+    if (sectionPosition < screenPosition) {
+        contactSection.classList.add('visible');
+    }
+});
